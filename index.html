@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+    <div class="form-title">
+        <h2>New Employee Registration</h2>
+    </div>
+
+    <form action="#" method="post">
+        <div class="form-title">
+            <h3>Personal Information</h3>
+        </div>
+        <div class="form-information">
+            <label>Full Name</label><br>
+            <input type="text" name="last_name" placeholder="Last Name*" required>
+            <input type="text" name="first_name" placeholder="First Name*" required> 
+            <input type="text" name="middle_name" placeholder="Middle Name*" required>
+            <input type="text" name="suffix_name" placeholder="Suffix Name" ><br><br>
+
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required><br><br>
+
+            <label>Sex</label>
+            <select name="sex" required>
+                <option value="">-</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+
+            <label>Civil Status</label>
+            <select name="civil_status" required>
+                <option value="">-</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select><br><br>
+
+            <label>Nationality</label><br>
+            <input type="text" name="nationality" placeholder="Nationality" required><br><br>
+
+            <label>Address</label><br>
+            <input type="text" name="adress" placeholder="Address*" required> <br><br>
+
+            <label>Height:</label>
+            <input type="number" name="height" placeholder="in cm" required><br><br>
+
+            <label>Weight:</label>
+            <input type="number" name="weight" placeholder="in kg" required>
+        </div>
+
+        <div class="form-title">
+            <h3>Job Description</h3>
+        </div>
+        <div class="form-information">
+            <label>Job Title:</label>
+            <input type="text" name="job_title" placeholder="Job Title" required><br><br>
+
+            <label>Department:</label>
+            <input type="text" name="department" placeholder="Department" required><br><br>
+
+            <label>Date Hired:</label>
+            <input type="date" name="date_hired" required>
+        </div>
+
+        <div class="form-title">
+            <h3>Contact Information</h3>
+        </div>
+        <div class="form-information">
+            <label>Email Address:</label>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+
+            <label>Contact Number:</label>
+            <input type="tel" name="contact_number" placeholder="0912-345-6789"
+                   pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required><br><br>
+      
+            <label>Emergency Contact Number:</label>
+            <input type="tel" name="emergency_contact" placeholder="0912-345-6789"
+                   pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required><br><br>
+        </div>
+
+        <div class="form-button">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+</html>
