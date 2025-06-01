@@ -12,6 +12,10 @@ body {
     border-radius: 30px;
 }
 
+.name{
+    text-align: right;
+}
+
 .info{
     text-align: right;
 }
