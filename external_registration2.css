@@ -17,7 +17,7 @@ body {
     font-weight: bold;
 }
 
-.form {
+form {
     background-color: #f5fcff;
     max-width: 800px;
     margin: 50px auto;
